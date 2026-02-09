@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split,GridSearchCV,cross_val_score
+from sklearn.model_selection import train_test_split
 from imblearn.pipeline import Pipeline
 from sklearn.preprocessing import RobustScaler,LabelEncoder,PolynomialFeatures
 from lightgbm import LGBMClassifier
@@ -100,4 +100,5 @@ if st.button("🔍Predict Price", type="primary", use_container_width=True):
             st.balloons()
     st.markdown("---")
     with st.expander("Input values used for prediction"):
+
         st.json(Input_data.to_dict(orient="records")[0])
