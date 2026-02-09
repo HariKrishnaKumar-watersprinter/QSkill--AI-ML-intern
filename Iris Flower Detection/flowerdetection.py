@@ -14,7 +14,7 @@ def train_model():
     species_unique = df['species'].unique()
     color_map = {species: idx for idx, species in enumerate(species_unique)}
     df['species_color'] = df['species'].map(color_map)
-    
+    important_cols = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
     def cap_outliers_iqr(df, column, iqr_factor=1.5):
         Q1 = df[column].quantile(0.25)
         Q3 = df[column].quantile(0.75)
@@ -26,6 +26,8 @@ def train_model():
     
         df[column] = df[column].clip(lower=lower_bound, upper=upper_bound)
         return df
+    for col in important_cols:
+        df = cap_outliers_iqr(df, col, iqr_factor=1.5)
 
     
     le = LabelEncoder()
@@ -102,3 +104,4 @@ if st.button("🔍Predict Price", type="primary", use_container_width=True):
     with st.expander("Input values used for prediction"):
 
         st.json(Input_data.to_dict(orient="records")[0])
+
