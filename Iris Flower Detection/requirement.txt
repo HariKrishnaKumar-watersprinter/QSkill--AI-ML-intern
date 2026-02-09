@@ -104,7 +104,7 @@ seaborn==0.13.2
 setuptools==80.10.1
 shap==0.50.0
 six==1.17.0
-sklearn-compat==0.1.5
+sklearn-compat==1.8.0
 slicer==0.0.8
 smmap==5.0.2
 SQLAlchemy==2.0.45
@@ -128,4 +128,5 @@ Werkzeug==3.1.4
 wheel==0.46.2
 widgetsnbextension==4.0.15
 xgboost==3.1.2
+
 
