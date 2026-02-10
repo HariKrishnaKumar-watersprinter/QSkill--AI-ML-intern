@@ -163,7 +163,7 @@ Iris-flower-Detection-Qskill-AI-MLIntern/
 ├── requirements.txt
 ├── README.md
 └── models/
-    └── trained_model.joblib
+    
 ```
 
 ---
