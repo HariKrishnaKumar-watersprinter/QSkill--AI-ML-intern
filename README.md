@@ -169,23 +169,6 @@ Iris-flower-Detection-Qskill-AI-MLIntern/
 ```
 
 ---
-## Data Flow Overview
-
-Below is a high-level overview of the data flow and model pipeline:
-
-```mermaid
-flowchart TD
-    A[Load Iris Dataset] --> B[Preprocessing]
-    B --> C[Exploratory Data Analysis]
-    C --> D[Model Selection]
-    D --> E[Model Training]
-    E --> F[Model Evaluation]
-    F --> G[Model Persistence]
-    G --> H[Prediction Interface]
----
-
-
----
 
 ```
 
