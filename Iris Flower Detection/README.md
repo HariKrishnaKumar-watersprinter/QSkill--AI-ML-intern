@@ -34,8 +34,7 @@ flowchart TD
     C --> D[Model Selection]
     D --> E[Model Training]
     E --> F[Model Evaluation]
-    F --> G[Model Persistence]
-    G --> H[Prediction Interface]
+    F --> G[Prediction Interface]
 ```
 
 ---
@@ -53,7 +52,6 @@ Before setting up the project, ensure you have the following requirements satisf
 - matplotlib
 - seaborn
 - scikit-learn
-- joblib (for model persistence)
 - Jupyter Notebook (optional, for interactive analysis)
 
 Install all dependencies at once using:
@@ -95,7 +93,7 @@ You can run the main workflow from the command line or interactively using Jupyt
 
 1. **Train the model:**
    ```bash
-   python iris_ml_pipeline.py
+   python flowerdetection.py
    ```
 
 2. **Predict new samples:**
@@ -112,7 +110,7 @@ You can run the main workflow from the command line or interactively using Jupyt
 
 - Open the included Jupyter Notebooks to explore data, train models, and visualize results step-by-step.
   ```bash
-  jupyter notebook Iris_Flower_Detection_Qskill.ipynb
+  jupyter notebook Iris_Flower_Detection.ipynb
   ```
 
 ---
@@ -121,11 +119,11 @@ You can run the main workflow from the command line or interactively using Jupyt
 
 You can configure the project's behavior via environment variables or by editing the configuration sections in scripts.
 
-- **Data file location:** Edit the path in `iris_ml_pipeline.py` if using a custom dataset.
+- **Data file location:** Edit the path in `flowerdetection.py` if using a custom dataset.
 - **Model persistence:** Change the model save/load path in the respective scripts.
 - **Hyperparameters:** Modify model parameters (e.g., test size, random state, algorithm settings) in the script or via a config file.
 
-Example (inside `iris_ml_pipeline.py`):
+Example (inside `flowerdetection.py`):
 ```python
 TEST_SIZE = 0.2
 RANDOM_STATE = 42
@@ -159,8 +157,8 @@ Iris-flower-Detection-Qskill-AI-MLIntern/
 ├── data/
 │   └── iris.csv
 ├── notebooks/
-│   └── Iris_Flower_Detection_Qskill.ipynb
-├── iris_ml_pipeline.py
+│   └── Iris_Flower_Detection.ipynb
+├── flowerdetection.py
 ├── predict.py
 ├── requirements.txt
 ├── README.md
