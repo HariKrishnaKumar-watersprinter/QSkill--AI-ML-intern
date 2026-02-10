@@ -21,7 +21,24 @@ The Iris Flower Detection project utilizes the classic Iris dataset to predict t
 - Modular Python scripts for maintainability
 
 ---
+---
 
+## Data Flow Overview
+
+Below is a high-level overview of the data flow and model pipeline:
+
+```mermaid
+flowchart TD
+    A[Load Iris Dataset] --> B[Preprocessing]
+    B --> C[Exploratory Data Analysis]
+    C --> D[Model Selection]
+    D --> E[Model Training]
+    E --> F[Model Evaluation]
+    F --> G[Model Persistence]
+    G --> H[Prediction Interface]
+```
+
+---
 ## Requirements
 
 Before setting up the project, ensure you have the following requirements satisfied:
