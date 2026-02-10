@@ -171,9 +171,6 @@ Iris-flower-Detection-Qskill-AI-MLIntern/
 ---
 
 ```
-
-
-
 ## Contact
 
 For questions or collaboration, please open an issue or contact the repository maintainer via GitHub.
